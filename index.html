@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.0.0/dist/iconify-icon.min.js"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        section[id] { scroll-margin-top: 4rem; }
+    </style>
+</head>
+<body class="min-h-screen bg-white text-gray-900 antialiased">
+    <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-gray-100">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <a href="#" class="flex items-center gap-3 font-semibold text-gray-900">
+                    <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-emerald-600/10 ring-1 ring-emerald-200">
+                        <iconify-icon icon="heroicons-outline:check-circle" class="text-2xl text-emerald-600"></iconify-icon>
+                    </span>
+                    <span class="text-lg">Finance with Chiranjeev</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 ml-auto">
+                    <a href="#hero" class="text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-gray-900">About</a>
+                    <a href="#training-program" class="text-gray-700 hover:text-gray-900">Courses</a>
+                    <a href="#why-choose-us" class="text-gray-700 hover:text-gray-900">Why Us</a>
+                    <a href="#get-in-touch" class="inline-flex items-center rounded-full bg-emerald-600 px-5 py-2 text-white hover:bg-emerald-700">Contact</a>
+                </nav>
+                <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none">
+                    <iconify-icon icon="heroicons-outline:bars-3" class="text-3xl"></iconify-icon>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100">
+            <div class="mx-auto max-w-7xl px-4 py-3 space-y-2">
+                <a href="#hero" class="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#about" class="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="#training-program" class="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100">Courses</a>
+                <a href="#why-choose-us" class="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100">Why Us</a>
+                <div class="flex items-center gap-3 pt-2">
+                    <a href="#get-in-touch" class="inline-flex items-center rounded-full bg-emerald-600 px-5 py-2 text-white hover:bg-emerald-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="relative overflow-hidden">
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-emerald-100/25 via-white to-blue-100/25"></div>
+            <div class="absolute inset-x-0 bottom-0 h-28 -z-10 bg-gradient-to-t from-emerald-100/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-28 -z-10 bg-gradient-to-t from-blue-100/30 to-transparent"></div>
+            <div class="absolute -z-10 left-0 bottom-0 h-64 w-64 rounded-full" style="background: radial-gradient(ellipse at bottom left, rgba(16,185,129,0.10) 0%, rgba(16,185,129,0.0) 60%);"></div>
+            <div class="absolute -z-10 right-0 bottom-0 h-64 w-64 rounded-full" style="background: radial-gradient(ellipse at bottom right, rgba(59,130,246,0.10) 0%, rgba(59,130,246,0.0) 60%);"></div>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-10 py-12 sm:py-20">
+                    <div class="flex flex-col justify-center">
+                        <div class="inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 px-3 py-1 w-fit">
+                            Stock Market Education & Training
+                        </div>
+                        <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">
+                            Master the Art of
+                            <span class="text-emerald-600">Investing</span>
+                            &
+                            <span class="text-blue-600">Trading</span>
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-600 max-w-2xl">
+                            Learn proven strategies and techniques to navigate the stock market with confidence. Get expert guidance for your investing and trading journey.
+                        </p>
+                        <div class="mt-8 flex flex-wrap items-center gap-4">
+                            <a href="#" class="inline-flex items-center rounded-full bg-red-600 px-5 py-3 text-white shadow-sm hover:bg-red-700">
+                                <iconify-icon icon="mdi:youtube" class="mr-2 text-2xl"></iconify-icon>
+                                Visit Our YouTube Channel
+                            </a>
+                            <a href="#" class="inline-flex items-center rounded-full bg-emerald-600 px-5 py-3 text-white shadow-sm hover:bg-emerald-700">
+                                Explore Courses
+                                <iconify-icon icon="heroicons-outline:chevron-right" class="ml-2 text-2xl"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-video overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg">
+                            <div class="h-full w-full grid place-items-center bg-gradient-to-br from-gray-50 to-gray-100">
+                                <div class="text-gray-500">Image Placeholder</div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-8 -left-8 h-24 w-24 rounded-full bg-emerald-50"></div>
+                        <div class="absolute -top-6 -right-6 h-16 w-16 rounded-full bg-indigo-50"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">About Us</h2>
+                <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+                    Empowering investors and traders with knowledge and practical strategies for success in the stock market
+                </p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="w-full">
+                    <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-lg bg-white">
+                        <div class="w-full h-[240px] sm:h-[300px] md:h-[360px] grid place-items-center bg-gradient-to-br from-gray-50 to-gray-100">
+                            <span class="text-gray-500">About Image Placeholder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900">
+                        Your Trusted Partner in Financial Education
+                    </h3>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Finance with Chiranjeev is dedicated to providing comprehensive stock market education to individuals
+                        who want to make informed investment and trading decisions. Through our YouTube channel and training
+                        programs, we simplify complex financial concepts and help you build a strong foundation in stock market investing.
+                    </p>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Whether you’re a beginner taking your first steps or an experienced trader looking to refine your strategies,
+                        we offer practical insights, real-world examples, and continuous support to help you achieve your financial goals.
+                    </p>
+                    <div class="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+                        <p class="font-semibold">Disclaimer:</p>
+                        <p class="mt-1 text-sm">
+                            We are not SEBI registered. Our content is purely educational and should not be considered as financial advice.
+                            Always consult with a certified financial advisor before making investment decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 mx-auto max-w-6xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+                    <div class="w-full rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-8 shadow-md text-center">
+                        <div class="flex flex-col items-center gap-3">
+                            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:user-group" class="text-3xl"></iconify-icon>
+                            </span>
+                            <div class="text-2xl font-bold text-gray-900">10,000+</div>
+                            <div class="text-gray-600">Active Learners</div>
+                        </div>
+                    </div>
+                    <div class="w-full rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-8 shadow-md text-center">
+                        <div class="flex flex-col items-center gap-3">
+                            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:play-circle" class="text-3xl"></iconify-icon>
+                            </span>
+                            <div class="text-2xl font-bold text-gray-900">500+</div>
+                            <div class="text-gray-600">Video Lessons</div>
+                        </div>
+                    </div>
+                    <div class="w-full rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-8 shadow-md text-center">
+                        <div class="flex flex-col items-center gap-3">
+                            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:check-circle" class="text-3xl"></iconify-icon>
+                            </span>
+                            <div class="text-2xl font-bold text-gray-900">1,000+</div>
+                            <div class="text-gray-600">Success Stories</div>
+                        </div>
+                    </div>
+                    <div class="w-full rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-8 shadow-md text-center">
+                        <div class="flex flex-col items-center gap-3">
+                            <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:plus-circle" class="text-3xl"></iconify-icon>
+                            </span>
+                            <div class="text-2xl font-bold text-gray-900">5+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="training-program" class="relative overflow-hidden">
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-emerald-100/25 via-white to-blue-100/25"></div>
+            <div class="absolute inset-x-0 bottom-0 h-28 -z-10 bg-gradient-to-t from-emerald-100/30 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-28 -z-10 bg-gradient-to-t from-blue-100/30 to-transparent"></div>
+            <div class="absolute -z-10 left-0 bottom-0 h-64 w-64 rounded-full" style="background: radial-gradient(ellipse at bottom left, rgba(16,185,129,0.10) 0%, rgba(16,185,129,0.0) 60%);"></div>
+            <div class="absolute -z-10 right-0 bottom-0 h-64 w-64 rounded-full" style="background: radial-gradient(ellipse at bottom right, rgba(59,130,246,0.10) 0%, rgba(59,130,246,0.0) 60%);"></div>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+                <div class="text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Our Training Programs</h2>
+                    <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+                        Comprehensive courses designed to take you from beginner to confident investor
+                    </p>
+                </div>
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:chart-bar" class="text-2xl"></iconify-icon>
+                            </span>
+                            <h3 class="font-semibold text-gray-900">Stock Market Basics</h3>
+                        </div>
+                        <p class="mt-3 text-gray-600">Learn fundamentals of the stock market, key terms, and how it works.</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-gray-900">Key Topics:</p>
+                            <ul class="mt-2 list-disc pl-5 marker:text-emerald-500 text-gray-700">
+                                <li>Market Basics</li>
+                                <li>Stock Analysis</li>
+                                <li>Reading Charts</li>
+                                <li>Market Orders</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justifycenter rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:check" class="text-2xl"></iconify-icon>
+                            </span>
+                            <h3 class="font-semibold text-gray-900">Trading Strategies</h3>
+                        </div>
+                        <p class="mt-3 text-gray-600">Master intraday, swing, and momentum strategies with risk management.</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-gray-900">Key Topics:</p>
+                            <ul class="mt-2 list-disc pl-5 marker:text-emerald-500 text-gray-700">
+                                <li>Technical Analysis</li>
+                                <li>Entry & Exit Points</li>
+                                <li>Risk Management</li>
+                                <li>Trade Setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justifycenter rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:rectangle-stack" class="text-2xl"></iconify-icon>
+                            </span>
+                            <h3 class="font-semibold text-gray-900">Technical Analysis</h3>
+                        </div>
+                        <p class="mt-3 text-gray-600">Dive into patterns, indicators, and tools used by professionals.</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-gray-900">Key Topics:</p>
+                            <ul class="mt-2 list-disc pl-5 marker:text-emerald-500 text-gray-700">
+                                <li>Chart Patterns</li>
+                                <li>Indicators</li>
+                                <li>Trend Analysis</li>
+                                <li>Support & Resistance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justifycenter rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:plus" class="text-2xl"></iconify-icon>
+                            </span>
+                            <h3 class="font-semibold text-gray-900">Portfolio Management</h3>
+                        </div>
+                        <p class="mt-3 text-gray-600">Build and manage diversified portfolios for long-term wealth.</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-gray-900">Key Topics:</p>
+                            <ul class="mt-2 list-disc pl-5 marker:text-emerald-500 text-gray-700">
+                                <li>Asset Allocation</li>
+                                <li>Diversification</li>
+                                <li>Rebalancing</li>
+                                <li>Risk Assessment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justifycenter rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:document-text" class="text-2xl"></iconify-icon>
+                            </span>
+                            <h3 class="font-semibold text-gray-900">Fundamental Analysis</h3>
+                        </div>
+                        <p class="mt-3 text-gray-600">Evaluate companies through financial statements and ratios.</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-gray-900">Key Topics:</p>
+                            <ul class="mt-2 list-disc pl-5 marker:text-emerald-500 text-gray-700">
+                                <li>Financial Ratios</li>
+                                <li>Balance Sheet</li>
+                                <li>P&L Statement</li>
+                                <li>Company Valuation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justifycenter rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                <iconify-icon icon="heroicons-outline:face-smile" class="text-2xl"></iconify-icon>
+                            </span>
+                            <h3 class="font-semibold text-gray-900">Investment Psychology</h3>
+                        </div>
+                        <p class="mt-3 text-gray-600">Master the mental game and avoid common behavioral traps.</p>
+                        <div class="mt-4">
+                            <p class="font-semibold text-gray-900">Key Topics:</p>
+                            <ul class="mt-2 list-disc pl-5 marker:text-emerald-500 text-gray-700">
+                                <li>Emotional Control</li>
+                                <li>Discipline</li>
+                                <li>Common Mistakes</li>
+                                <li>Trading Psychology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 mx-auto max-w-3xl">
+                    <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-md text-center">
+                        <p class="text-gray-700">Want to learn more about our courses? Watch free lessons on our YouTube channel!</p>
+                        <a href="#" class="mt-4 inline-flex items-center rounded-full bg-red-600 px-5 py-3 text-white shadow-sm hover:bg-red-700">
+                            Visit YouTube Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Why Choose Us</h2>
+                <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+                    We're committed to making stock market education accessible, practical, and effective for everyone
+                </p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-6 shadow-md">
+                    <div class="flex items-start gap-4">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-emerald-600 ring-1 ring-emerald-200 shadow-sm">
+                            <iconify-icon icon="heroicons-outline:light-bulb" class="text-2xl"></iconify-icon>
+                        </span>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Practical Learning</h3>
+                            <p class="mt-2 text-gray-600">Real-world examples and case studies that you can apply immediately in your trading journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-6 shadow-md">
+                    <div class="flex items-start gap-4">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-emerald-600 ring-1 ring-emerald-200 shadow-sm">
+                            <iconify-icon icon="heroicons-outline:clock" class="text-2xl"></iconify-icon>
+                        </span>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Learn at Your Pace</h3>
+                            <p class="mt-2 text-gray-600">Access content anytime, anywhere. Learn according to your schedule and convenience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-6 shadow-md">
+                    <div class="flex items-start gap-4">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-emerald-600 ring-1 ring-emerald-200 shadow-sm">
+                            <iconify-icon icon="heroicons-outline:user-group" class="text-2xl"></iconify-icon>
+                        </span>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Community Support</h3>
+                            <p class="mt-2 text-gray-600">Join thousands of learners and share experiences, strategies, and insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-6 shadow-md">
+                    <div class="flex items-start gap-4">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-emerald-600 ring-1 ring-emerald-200 shadow-sm">
+                            <iconify-icon icon="heroicons-outline:trophy" class="text-2xl"></iconify-icon>
+                        </span>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Proven Methods</h3>
+                            <p class="mt-2 text-gray-600">Learn strategies that have been tested and proven effective in real market conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-6 shadow-md">
+                    <div class="flex items-start gap-4">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-emerald-600 ring-1 ring-emerald-200 shadow-sm">
+                            <iconify-icon icon="heroicons-outline:heart" class="text-2xl"></iconify-icon>
+                        </span>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Simplified Content</h3>
+                            <p class="mt-2 text-gray-600">Complex topics broken down into easy-to-understand lessons for everyone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-gray-100 bg-gradient-to-br from-emerald-100/25 to-blue-100/25 p-6 shadow-md">
+                    <div class="flex items-start gap-4">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white text-emerald-600 ring-1 ring-emerald-200 shadow-sm">
+                            <iconify-icon icon="heroicons-outline:bolt" class="text-2xl"></iconify-icon>
+                        </span>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Regular Updates</h3>
+                            <p class="mt-2 text-gray-600">Stay updated with latest market trends, news, and strategies through our regular content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <div class="rounded-3xl bg-gradient-to-r from-emerald-500 to-blue-600 px-6 py-10 sm:px-10 sm:py-12 text-white shadow-lg">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold">Ready to Start Your Journey?</h3>
+                        <p class="mt-2 text-indigo-100">Join thousands of learners who are already transforming their financial future</p>
+                        <a href="#" class="mt-4 inline-flex items-center rounded-full bg-white px-5 py-3 text-emerald-700 hover:bg-emerald-50">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="get-in-touch" class="relative overflow-hidden">
+            <div class="absolute inset-0 -z-10 bg-gradient-to-b from-emerald-50 to-blue-50"></div>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+                <div class="text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Get in Touch</h2>
+                    <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+                        Have questions about stock market investing? We're here to help you on your learning journey
+                    </p>
+                </div>
+                <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Contact Information</h3>
+                            <div class="mt-4 space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                        <iconify-icon icon="heroicons-outline:envelope" class="text-2xl"></iconify-icon>
+                                    </span>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Email</div>
+                                        <div class="text-gray-600">info@financewithchiranjeev.com</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
+                                        <iconify-icon icon="heroicons-outline:map-pin" class="text-2xl"></iconify-icon>
+                                    </span>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Address</div>
+                                        <div class="text-gray-600">
+                                            G-179, EXPRESS ZONE,<br />
+                                            Western Express Highway, Malad East,<br />
+                                            Near Dindoshi Metro Station,<br />
+                                            Mumbai 400097
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-red-100 text-red-600 ring-1 ring-red-200">
+                                        <iconify-icon icon="mdi:youtube" class="text-2xl"></iconify-icon>
+                                    </span>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">YouTube Channel</div>
+                                        <div class="text-gray-600">Finance with Chiranjeev</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+                            <p class="font-semibold">Important Notice</p>
+                            <p class="mt-1 text-sm">
+                                We are not SEBI registered. All our educational content is for learning purposes only.
+                                We do not provide any buy/sell recommendations. Please consult with a certified financial
+                                advisor before making any investment decisions.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-lg">
+                            <h3 class="font-semibold text-gray-900">Send us a Message</h3>
+                            <form class="mt-6 space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" class="mt-1 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-gray-900 shadow-sm focus:border-emerald-500 focus:outline-none" placeholder="Your name" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" class="mt-1 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-gray-900 shadow-sm focus:border-emerald-500 focus:outline-none" placeholder="your.email@example.com" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Subject</label>
+                                    <input type="text" class="mt-1 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-gray-900 shadow-sm focus:border-emerald-500 focus:outline-none" placeholder="What's this about?" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Message</label>
+                                    <textarea rows="4" class="mt-1 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-gray-900 shadow-sm focus:border-emerald-500 focus:outline-none" placeholder="Tell us how we can help you..."></textarea>
+                                </div>
+                                <button type="button" class="inline-flex w-full items-center justify-center rounded-md bg-emerald-600 px-5 py-3 text-white hover:bg-emerald-700">
+                                    <span class="mr-2">Send Message</span>
+                                    <iconify-icon icon="heroicons-outline:paper-airplane" class="text-2xl"></iconify-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-16 bg-slate-900 text-slate-300">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div>
+                    <div class="flex items-center gap-3">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-emerald-600/10 ring-1 ring-emerald-400">
+                            <iconify-icon icon="heroicons-outline:check-circle" class="text-2xl text-emerald-400"></iconify-icon>
+                        </span>
+                        <span class="text-xl font-semibold text-white">Finance with Chiranjeev</span>
+                    </div>
+                    <p class="mt-4 text-slate-400">
+                        Empowering individuals with practical stock market education and trading knowledge to make
+                        informed investment decisions.
+                    </p>
+                    <div class="mt-6 flex items-center gap-4">
+                        <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-red-600/20 text-red-400 ring-1 ring-red-500 hover:bg-red-600/30">
+                            <iconify-icon icon="mdi:youtube" class="text-2xl"></iconify-icon>
+                        </a>
+                        <a href="mailto:info@financewithchiranjeev.com" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600/20 text-emerald-400 ring-1 ring-emerald-500 hover:bg-emerald-600/30">
+                            <iconify-icon icon="heroicons-outline:envelope" class="text-2xl"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-white font-semibold">Quick Links</div>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#hero" class="text-slate-300 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-slate-300 hover:text-white">About Us</a></li>
+                        <li><a href="#training-program" class="text-slate-300 hover:text-white">Courses</a></li>
+                        <li><a href="#get-in-touch" class="text-slate-300 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-white font-semibold">Contact</div>
+                    <div class="mt-4 space-y-2">
+                        <div>G-179, EXPRESS ZONE</div>
+                        <div>Western Express Highway</div>
+                        <div>Malad East, Mumbai 400097</div>
+                        <div class="mt-2">info@financewithchiranjeev.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-slate-800 pt-6">
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <p class="text-slate-400">© <span id="year"></span> Finance with Chiranjeev. All rights reserved.</p>
+                    <p class="text-slate-400">Not SEBI Registered - Educational Content Only</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        if (mobileMenu) {
+            const links = mobileMenu.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
